@@ -42,7 +42,7 @@ module.exports = (themeConfig, ctx) => {
         id: 'handbook',
         dirname: '_handbook',
         path: '/handbooks/',
-        layout: 'Lifes',
+        layout: 'HandBooks',
         itemLayout: 'Life',
         frontmatter: { title: 'Handbook' },
         itemPermalink: '/handbooks/:slug',
