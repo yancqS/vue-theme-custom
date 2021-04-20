@@ -8,10 +8,7 @@
           :sm="24"
           :md="12"
         >
-          <el-card
-            class="card project-card zoomIn"
-            :style="'background-image: linear-gradient(190deg, rgba(255, 249, 232, 0) 0%, rgb(183 193 167) 100%), url(' + project.frontmatter.image + ')'"
-          >
+          <el-card class="card project-card zoomIn">
             <router-link :to="project.regularPath">
               <div class="project-card-header">
                 <div class="project-icon">
@@ -40,7 +37,7 @@
                 </div>
               </div>
               <div>
-                <h4 class="project-title">{{ project.frontmatter.title || project.title }}</h4>
+                <h4>{{ project.frontmatter.title || project.title }}</h4>
                 <p class="project-description">
                   {{ project.frontmatter.description }}
                 </p>
@@ -84,9 +81,7 @@ export default {
 
   .project-card.card {
     margin: 0.5rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-blend-mode: normal;
+    background-image: linear-gradient(45deg, darken($accentColor, 30%), darken($accentColor, 70%));
     color: lighten($accentColor, 80%);
     box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3);
     transition: all 0.4s;
@@ -127,18 +122,12 @@ export default {
       margin: 1.5rem auto;
     }
 
-    .project-title {
-      background-image: -webkit-linear-gradient(45deg, #45a95d, #55d017, #9c9c18);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
     .languages-list {
       list-style: none;
       display: flex;
       padding: 0;
       margin: 0;
-      color: lighten($accentColor, 60%);
+      color: lighten($accentColor, 40%);
       font-family: monospace;
 
       li {
