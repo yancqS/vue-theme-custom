@@ -128,7 +128,7 @@ export default {
     }
 
     .project-title {
-      background-image: -webkit-linear-gradient(45deg, #deeae1, #55d017, #9c9c18);
+      background-image: -webkit-linear-gradient(45deg, #deeae1, #55d017, #9c9c18) !important;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
