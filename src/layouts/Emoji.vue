@@ -8,6 +8,7 @@
     ></el-input>
     <el-card 
       v-for="(item, index) in emoji_key_arr" 
+      :key="item"
       class="emoji_wrap"
       shadow="hover"
     >
@@ -79,7 +80,7 @@ export default {
   .emoji_wrap
     margin 10px 10px 0 0
     flex 0 1 23%
-    .el-card__body
+    &>div
       display flex
       flex-wrap nowrap
       .desc
