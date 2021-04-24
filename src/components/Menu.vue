@@ -16,6 +16,7 @@
         v-if="item.icon"
         :class="item.icon"
       />
+      <span v-else>{{item.emoji}}</span>
       {{ item.text }}
     </el-menu-item>
   </el-menu>

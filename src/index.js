@@ -50,6 +50,12 @@ module.exports = (themeConfig, ctx) => {
           lengthPerPage: 10,
         },
       },
+      {
+        id: 'emoji',
+        dirname: '_emoji',
+        path: '/emoji/',
+        layout: 'Emoji',
+      },
     ],
     frontmatters: [
       {
@@ -73,8 +79,6 @@ module.exports = (themeConfig, ctx) => {
       : defaultBlogPluginOptions
 
   const plugins = [
-    'disqus',
-    'reading-time',
     'flexsearch',
     ['@vuepress/blog', blogPluginOptions],
   ]
