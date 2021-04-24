@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container_emoji">
     <el-input 
       class="search-box"
       placeholder="Search your Emoji  ( Automatically remove spaces🤪  )"
@@ -70,7 +70,7 @@ export default {
 }
 </script>
 <style lang='stylus'>
-.container
+.container_emoji
   display flex
   flex-wrap wrap
   justify-content space-around
