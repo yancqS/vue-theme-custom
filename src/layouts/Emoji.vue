@@ -1,5 +1,5 @@
 <template>
-  <div class="container_emoji">
+  <div class="container_emoji container">
     <el-input 
       class="search-box"
       placeholder="Search your Emoji  ( Automatically remove spaces🤪  )"
