@@ -120,6 +120,11 @@ export default {
     p.project-description {
       color: lighten($accentColor, 60%);
       margin: 1.5rem auto;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+      overflow: hidden;
+      height: 81px;
     }
 
     .languages-list {
