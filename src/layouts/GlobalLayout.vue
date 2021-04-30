@@ -6,6 +6,7 @@
     <ClientOnly v-if="$themeConfig.cookies">
       <cookie-law v-bind="$themeConfig.cookies" />
     </ClientOnly>
+    <BackToTop />
   </div>
 </template>
 
