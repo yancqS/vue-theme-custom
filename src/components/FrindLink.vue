@@ -5,12 +5,12 @@
     style="margin-top: 1rem"
   >
     <ul class="list-unstyled">
+      <h4 class="website">推荐网站</h4>
       <li
         v-for="item in $themeConfig.friendlink"
         :key="item.name"
         class="d-inline-block mx-2 my-2"
       >
-        <h4 class="website">推荐网站</h4>
         <el-button @click="jump(item.link)">{{item.name}}</el-button>
       </li>
     </ul>
