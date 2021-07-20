@@ -92,6 +92,7 @@ ol, ul {
   display: flex;
   padding: 15px 32px;
   word-break: wrap;
+  position: relative;
 
   .footer-left-wrap {
     line-height: 30px;

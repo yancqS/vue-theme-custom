@@ -32,5 +32,9 @@ export default {
 <style scoped>
 .busuanzi {
   font-size: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 </style>
