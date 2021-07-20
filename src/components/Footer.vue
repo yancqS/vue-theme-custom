@@ -11,11 +11,16 @@
           class="contact-item"
         >
           <NavLink :link="item.link">
-            <span :class="item.iconComponent" class="iconfont"></span>
+            <span
+              :class="item.iconComponent"
+              class="iconfont"
+            />
           </NavLink>
         </li>
       </ul>
     </div>
+
+    <Busuanzi v-if="busuanzi" />
 
     <div class="footer-right-wrap">
       <ul
@@ -53,7 +58,7 @@ export default {
       )
         .map(({ type, link }) => {
           return {
-            iconComponent: 'icon-'+ type,
+            iconComponent: 'icon-' + type,
             link,
           }
         })
@@ -63,6 +68,10 @@ export default {
       return (
         (this.$themeConfig.footer && this.$themeConfig.footer.copyright) || []
       )
+    },
+
+    busuanzi () {
+      return this.$themeConfig.busuanzi && this.$themeConfig.busuanzi.enable
     },
   },
 }

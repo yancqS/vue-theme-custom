@@ -7,8 +7,8 @@
     "vuepress",
     "blog"
   ],
-  "author": "",
   "license": "MIT",
+  "author": "",
   "main": "src/index.js",
   "files": [
     "src"
@@ -62,6 +62,7 @@
   "dependencies": {
     "@vuepress/plugin-blog": "^1.9.2",
     "bootstrap": "^4.4.1",
+    "busuanzi.pure.js": "^1.0.3",
     "core-js": "2",
     "element-ui": "^2.13.0",
     "vue-cookie-law": "1.12.0",

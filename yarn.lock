@@ -2747,6 +2747,11 @@ builtins@^1.0.3:
   resolved "https://registry.yarnpkg.com/builtins/-/builtins-1.0.3.tgz#cb94faeb61c8696451db36534e1422f94f0aee88"
   integrity sha1-y5T662HIaWRR2zZTThQi+U8K7og=
 
+busuanzi.pure.js@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/busuanzi.pure.js/-/busuanzi.pure.js-1.0.3.tgz#a03784db9e5b2c42a059b16551d2511933a46f5c"
+  integrity sha512-tPULdyx+8NNb9geZYDpktKmHAYx9f2LEOBaHyWCaM7iPEMIa/43KgYAUluuU7YG9UFSOFpj4dO7Nj2Vlu3V9Rg==
+
 byte-size@^7.0.1:
   version "7.0.1"
   resolved "https://registry.yarnpkg.com/byte-size/-/byte-size-7.0.1.tgz#b1daf3386de7ab9d706b941a748dbfc71130dee3"
