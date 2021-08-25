@@ -29,12 +29,17 @@ export default {
   },
 }
 </script>
-<style scoped>
+<style lang="stylus" scoped>
 .busuanzi {
   font-size: 14px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: none;
+  @media (min-width: 1023px) {
+      display: flex;
+      justify-content: flex-end;
+  }
 }
 </style>
