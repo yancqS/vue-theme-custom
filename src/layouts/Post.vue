@@ -26,24 +26,18 @@
           </div>
         </el-card>
 
-        <el-card
-          v-if="$themeConfig.posts && $themeConfig.posts.prepend && $themeConfig.posts.prepend.length > 0"
-          class="py-3 px-3 mb-4"
-        >
+        <el-card class="py-3 px-3 mb-4">
           <!-- eslint-disable-next-line -->
-          <span v-html="$themeConfig.posts.prepend" />
+          <span v-html="prepend" />
         </el-card>
 
         <el-card class="py-3 px-3 mb-4">
           <Content />
         </el-card>
 
-        <el-card
-          v-if="$themeConfig.posts && $themeConfig.posts.append && $themeConfig.posts.append.length > 0"
-          class="py-3 px-3 mb-4"
-        >
+        <el-card class="py-3 px-3 mb-4">
           <!-- eslint-disable-next-line -->
-          <span v-html="$themeConfig.posts.append" />
+          <span v-html="append" />
         </el-card>
 
         <el-card
@@ -117,10 +111,24 @@ export default {
     PostInfo,
     FeaturedPosts,
   },
+  data () {
+    return {
+      prepend: '',
+      append: '',
+    }
+  },
   computed: {
     featured_posts () {
       return this.$site.pages.filter(page => page.frontmatter.featured === true)
     },
+  },
+  async mounted () {
+    fetch('https://v1.hitokoto.cn/?c=i').then(res => res.json()).then(res => {
+      this.prepend = res.hitokoto + `<strong>——《${res.from}》</strong>`
+    })
+    fetch('https://v1.hitokoto.cn/?c=d').then(res => res.json()).then(res => {
+      this.append = res.hitokoto + `<strong>——《${res.from}》</strong>`
+    })
   },
 }
 </script>
