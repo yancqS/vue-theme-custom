@@ -18,7 +18,7 @@
       <ClockIcon />
       {{
         $t("time_to_read", {
-          rounded_time: Math.round(timeToRead.time / 60000),
+          rounded_time: Math.round(timeToRead.minutes) + 1,
           raw_obj: timeToRead
         })
       }}
@@ -43,7 +43,7 @@ export default {
     timeToRead: {
       type: Object,
       default: () => {
-        return { time: 60000 }
+        return { minutes: 1 }
       },
     },
     location: { type: String, default: null },
